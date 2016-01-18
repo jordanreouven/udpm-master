@@ -1,0 +1,886 @@
+@font-face{
+    font-family:"salut";
+    src: url("../font/POLYA.otf");
+}
+@media (min-width: 288px){
+    .infos{
+        position: relative;
+        top: 30px;
+    }
+    .connexion {
+        width: 300px;
+        margin:210px auto 30px auto;
+    }
+
+    .inscription{
+        margin-left: 0px;
+        width: 300px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    #barre{
+        display: none;
+    }
+}
+@media (min-width: 320px){
+    .infos{
+        position: relative;
+        top: 30px;
+    }
+    .connexion {
+        width: 320px;
+    }
+
+    .inscription{
+        margin-left: 0px;
+        width: 320px;
+    }
+    #barre{
+        display: none;
+    }
+}
+@media (min-width: 323px){
+    .infos{
+        position: relative;
+        top: 0px;
+    }
+    .connexion {
+        width: 300px;
+    }
+
+    .inscription{
+        margin-left: 0px;
+        width: 300px;
+    }
+    #barre{
+        display: none;
+    }
+}
+@media (min-width: 328px){
+    .infos{
+        position: relative;
+        top: 0px;
+    }
+    .connexion {
+        width: 300px;
+    }
+
+    .inscription{
+        margin-left: 0px;
+        width: 300px;
+    }
+    #barre{
+        display: none;
+    }
+}
+@media (min-width: 362px){
+    .infos{
+        position: relative;
+        top: 30px;
+    }
+    .connexion {
+        margin-top:90px;
+    }
+
+    .inscription{
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    #barre{
+        display: none;
+    }
+}
+@media (min-width: 387px){
+    .infos{
+        position: relative;
+        top: 30px;
+    }
+    .connexion {
+        margin-top:90px;
+    }
+
+    .inscription{
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    #barre{
+        display: none;
+    }
+}
+@media (min-width: 429px){
+    .infos{
+        position: relative;
+        top:40px;
+    }
+    .inscription{
+        margin-left: 0px;
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+    .connexion{
+        /*margin: 40px auto;*/
+    }
+    #barre{
+        display: none;
+    }
+}
+@media (min-width: 475px){
+    .infos{
+        position: relative;
+    }
+    .inscription{
+        margin-left: 0px;
+        width: 400px;
+    }
+    .connexion {
+        width: 400px;
+    }
+}
+@media (min-width: 476px){
+    .infos{
+        position: relative;
+        top: 0;
+    }
+    .connexion {
+        margin: 80px auto 30px auto;
+    }
+    .inscription{
+        width: 400px;
+    }
+    #barre{
+        display: none;
+    }
+}
+@media (min-width: 482px){
+    .infos{
+        position: relative;
+        top:0;
+    }
+    .connexion {
+        margin: 80px auto 30px auto;
+    }
+    .inscription{
+        width: 400px;
+    }
+    #barre{
+        display: none;
+    }
+}
+@media (min-width: 741px){
+    .infos{
+        position: relative;
+        top: 0px;
+    }
+    .connexion {
+        margin:30px auto;
+        width: 400px;
+    }
+    .inscription{
+        width: 400px;
+    }
+    #barre{
+        display: none;
+    }
+}
+@media (min-width: 805px){
+    .infos{
+        position: relative;
+        top: 0px;
+    }
+    .connexion {
+        margin:30px 200px;
+        width: 400px;
+    }
+    .inscription{
+        width: 400px;
+    }
+    #barre{
+        display: none;
+    }
+}
+@media (min-width: 840px){
+    #barre{
+        display: none;
+    }
+    .connexion{
+        margin:20px 200px;
+    }
+}
+@media (min-width: 1071px){
+    #barre{
+        display: inline-block;
+    }
+    .connexion{
+        margin: 0 0;
+    }
+    .inscription{
+        margin-top: 0;
+    }
+    #TopPlaylist{
+        background-color:#2E505C;
+        width:800px;
+        height:200px;
+        margin-top:100px;
+    }
+    #TopMusique{
+        background-color:#2E505C;
+        width:800px;
+        height:200px;
+        margin-top:100px;  
+    }
+    #TopArtiste{    
+        background-color:#2E505C;
+        width:800px;
+        height:200px;
+        margin-top:100px;
+        margin-bottom:100px;
+    }
+}
+html{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height:100%;
+}/*
+html::-webkit-scrollbar{
+    width: 15px;   
+}
+html::-webkit-scrollbar-track {
+      background-color: #5A3640;
+} /* the new scrollbar will have a flat appearance with the set background color 
+ 
+html::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.2);
+} /* this will style the thumb, ignoring the track 
+ 
+html::-webkit-scrollbar-button {
+      background-color: #5A3640;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) 
+ 
+html::-webkit-scrollbar-corner {
+      background-color: black;
+}*/
+.page {
+    margin-top: 107px; 
+    width: 100%;
+    height: auto;
+}
+h1{
+    color:#b47f2a;
+    font-size: 20pt;
+    font-weight: normal;
+}
+label{
+    color:#84736b;
+    font-weight: bold;
+}
+#TableInscription {
+    padding: 30px 0px 20px 30px;
+	width: 550px;
+    height: 300px;
+    background-color: #25373D;
+    box-shadow: -1px 2px 40px 3px rgba(0, 0, 0, 0.3) inset;
+}
+#TableInscription input{
+    width: 220px;
+    height: 25px;
+    margin-top: -60px;
+    padding: 0px 10px 0px 10px;
+    border: none;
+    color: #132b42;
+    background: #807f7f;
+    -webkit-box-shadow: 2px 2px 11px -7px #000000 ;
+    box-shadow: 2px 2px 11px -7px #000000 ;
+    font-size: 11pt;
+}
+#TableInscription input::-webkit-input-placeholder{
+    color: #132b42;   
+    /*font-style: oblique;*/
+    font-weight: bold;
+    z-index: 1;
+}
+#TableInscription input:focus{
+    outline: none;
+}
+#TableInscription input:hover{
+    cursor: text;
+    z-index: auto;
+}
+.header{
+    background-color: #2E505C; /*3A5B66*/ 
+    position: fixed;
+    height: 110px;
+    top:0px;
+    width: 100%;
+    box-shadow: 2px 2px 15px -4px #000000 ;
+    z-index: 99;
+}
+.header ul{
+    height: 110px;  
+    position: relative;
+}
+.header li{
+    display: inline-block;
+    height: 100%;
+    position: relative;
+    top:-16px;
+}
+.header a,.header p{
+    cursor: pointer;
+}
+.recherche{
+    width: 100%;
+    height: 226px;
+    background-color: #25373D; 
+}
+#searchResult{
+    width: 260px;
+    height: auto;
+    list-style-type: none;
+    padding:0; margin:0;
+    background: #b47f2a;
+    font-size: 9pt;
+    z-index: 3;
+    position: relative;
+}
+#searchResult li:before {
+    text-align: left;
+    padding-left: 10px;
+}
+#searchResult li {
+    padding: 5px 3px 5px 7px;
+    text-align: left;
+    padding-left: 10px;
+}
+#searchResult li:hover {
+	background: #A17227;
+    text-align: left;
+    padding-left: 10px;
+}
+#searchResult li.selected {
+	background: #A17227;
+    text-align: left;
+    padding-left: 10px;
+}
+#search {
+    width: 240px;
+    height: 25px;
+    margin-top: -60px;
+    padding: 0px 10px 0px 10px;
+    display: inline-block;
+    border: none;
+    color: #132b42;
+    background: #8a6426;
+    -webkit-box-shadow: 2px 2px 15px -4px #000000 ;
+    box-shadow: 2px 2px 15px -4px #000000 ;
+    z-index: 1;
+    position: relative;
+    font-size: 11pt;
+}
+#search::-webkit-input-placeholder{
+    color: #132b42;   
+    /*font-style: oblique;*/
+    font-weight: bold;
+    z-index: 1;
+}
+#search:focus{
+    outline: none;
+}
+.rest{
+    width: 100%;
+    min-height: 572px;
+    height: auto;
+    background-color: #25373D; 
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+.music{
+    float: left;
+    width: 100%;
+    min-height: 792px;
+    height: auto;
+    background-color: #25373D; 
+}
+.infos {
+    width: 100%;
+    min-height: 320px;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+.infos div {
+    display:inline-block;
+}
+.connexion {
+    background-color: #25373D;
+    box-shadow: -1px 2px 40px 3px rgba(0, 0, 0, 0.3) inset;
+    height: 250px;
+    vertical-align:top;
+    display: inline-block;
+    position: relative;
+}
+.inscription {
+    box-shadow: -1px 2px 40px 3px rgba(0, 0, 0, 0.3) inset;
+    height: 250px;
+    background-color: #25373D;
+    text-align: center;
+}
+#barre {
+    background-color: #84736b;
+    width:5px;
+    height: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
+    top: 20px; 
+    position: relative;
+}
+
+#passwd {
+    width: 220px;
+    height: 25px;
+    margin-left: 5px;
+    padding: 0px 10px 0px 10px;
+    display: inline-block;
+    border: none;
+    color: #132b42;
+    background: #807f7f;
+    -webkit-box-shadow: 2px 2px 11px -7px #000000 ;
+    box-shadow: 2px 2px 11px -7px #000000 ;
+    position: relative;
+    font-size: 11pt;
+    top:0;
+}
+#passwd::-webkit-input-placeholder{
+    color: #132b42;   
+    /*font-style: oblique;*/
+    font-weight: bold;
+}
+#passwd:focus{
+    outline: none;
+}
+
+#login {
+    width: 220px;
+    height: 25px; 
+    padding: 0px 10px 0px 10px;
+    border: none;
+    color: #132b42;
+    background: #807f7f;
+    -webkit-box-shadow: 2px 2px 11px -7px #000000 ;
+    box-shadow: 2px 2px 11px -7px #000000 ;
+    position: relative;
+    font-size: 11pt;
+    top: 0;
+}
+#login::-webkit-input-placeholder{
+    color: #132b42;   
+    /*font-style: oblique;*/
+    font-weight: bold;
+}
+#login:focus{
+    outline: none;
+}
+#login:hover{
+    cursor: text;
+}
+
+#inscription {
+    width: 40px;
+    height: 40px;
+    margin-top: -60px;
+    padding: 0px 10px 0px 10px;
+    display: inline-block;
+    border: none;
+    color: #132b42;
+    background: #807f7f;
+    -webkit-box-shadow: 2px 2px 15px -4px #000000 ;
+    box-shadow: 2px 2px 15px -4px #000000 ;
+    z-index: 1;
+    position: relative;
+    font-size: 11pt;
+    border-radius: 20px 20px 20px 20px;
+    outline: none;
+}
+#inscription:hover{
+    outline: none;
+    z-index: 1;
+    background-color: #8a6426;
+}
+#inscription:active{
+    outline: none;
+    z-index: 1;
+    background-color: #8a6426;
+}
+#inscription:before{
+    outline: none;
+    z-index: 1;
+    background-color: #8a6426;
+}
+.block {
+    margin-top: -20px;
+    width: 400px;
+    height: 250px;
+}
+#ConfCon {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    padding: 0px 10px 0px 10px;
+    display: inline-block;
+    border: none;
+    color: #132b42;
+    background: #807f7f;
+    -webkit-box-shadow: 2px 2px 15px -4px #000000 ;
+    box-shadow: 2px 2px 15px -4px #000000 ;
+    z-index: 1;
+    position: relative;
+    font-size: 11pt;
+    border-radius: 20px 20px 20px 20px;
+    outline: none;
+}
+#ConfCon:hover{
+    outline: none;
+    z-index: 1;
+    background-color: #8a6426;
+}
+#ConfCon:active{
+    outline: none;
+    z-index: 1;
+    background-color: #8a6426;
+}
+#ConfCon:before{
+    outline: none;
+    z-index: 1;
+    background-color: #8a6426;
+}
+
+.resultat {
+    width: 260px;
+    height: auto;
+}
+#submit{
+    width: 100px;
+    height: 25px;
+    margin-top: -60px;
+    margin-right: 10px;
+    padding: 0px 10px 0px 10px;
+    border: none;
+    color: #132b42;
+    background: #807f7f;
+    -webkit-box-shadow: 2px 2px 11px -7px #000000 ;
+    box-shadow: 2px 2px 11px -7px #000000 ;
+    font-size: 11pt;
+    outline: none;
+}
+#submit:hover{
+    top: -2px;
+    position: relative;
+    outline: none;
+    z-index: 1;
+    background-color: #8a6426;
+    box-shadow: 2px 2px 11px 0px #000000 ;
+}
+#submit:active{
+    top: 0;
+    position: relative;
+    outline: none;
+    z-index: 1;
+    background-color: #8a6426;
+    box-shadow: none;
+}
+#reset{
+    width: 100px;
+    height: 25px;
+    margin-top: -60px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    padding: 0px 10px 0px 10px;
+    border: none;
+    color: #132b42;
+    background: #807f7f;
+    -webkit-box-shadow: 2px 2px 11px -7px #000000 ;
+    box-shadow: 2px 2px 11px -7px #000000 ;
+    font-size: 11pt;
+    outline: none;
+}
+#reset:hover{
+    top: -2px;
+    position: relative;
+    outline: none;
+    z-index: 1;
+    background-color: #8a6426;
+    box-shadow: 2px 2px 11px 0px #000000 ;
+}
+#reset:active{
+    top: 0;
+    position: relative;
+    outline: none;
+    z-index: 1;
+    background-color: #8a6426;
+    box-shadow: none;
+}
+.footer{
+    color: white;
+    float: left;
+    height:80px;
+    width: 100%;
+    background-color: #2E505C;
+}
+.Profile {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 190px;
+}
+#PhotoArriere {
+    position: relative;
+    float: left;
+    width: 1000px;
+    height: 190px;
+}
+#PhotoDeProfile {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+.accueil {
+    float: left;
+    width: 100%;
+    position: relative;
+    background-color: #25373D;
+    min-height: 790px;
+    height: auto;
+    z-index: 1;
+}
+
+.ContenuProfile {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 1000px;
+    height: 200px;
+    box-shadow: -1px 2px 40px 3px rgba(0, 0, 0, 0.3) inset;
+}
+.point {
+    float: left;
+    width:5px;
+    margin: 2px 2px 2px 2px;
+    height: 5px;
+    border-radius: 20px 20px 20px 20px;
+    background: black;
+    position:relative;
+    top:50px;
+}
+
+#OptionUser {
+    position: absolute;
+    right: 0px;
+    top:153px;
+    width: auto;
+    height: auto;
+}
+#OptionUser a{
+    color:#b47f2a;
+    text-decoration: none;
+    outline: none;
+}
+#OptionUser li{
+    width:150px;
+    height: 30px;
+    background-color: #5A3640;
+    font-size: 13pt;
+    margin: 0px 0px 0px -17px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#OptionUser li:hover{
+    background-color: #7A3640;
+}
+#User {
+    right:0px;
+    top:-43px;
+    position:absolute;
+    
+}
+#erreur{
+    visibility:hidden;
+    color:#b47f2a;
+}
+#TopPlaylist{
+    background-color:#2E505C;
+    margin: 100px auto 0 auto;
+}
+#TopPlaylist p{
+    top:-20px;
+}
+#TopMusique{
+    background-color:#2E505C;
+    margin: 100px auto 0 auto;
+}
+#TopMusique p{
+    top:-20px;
+}
+#TopArtiste{    
+    background-color:#2E505C;
+    margin-top:100px;
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom:100px;
+}
+#TopArtiste p{
+    top:-20px;
+}
+.contenu{
+    width:100%;
+    height:100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+   
+}
+.contenu p{
+    top:100px;
+    position:relative;
+    color: #b47f2a;
+}
+
+.Profil {
+    float: left;
+    width: 100%;
+    position: relative;
+    background-color: #25373D;
+    min-height: 792px;
+    height: auto;
+}
+
+#ListeMenu{
+    margin: 10px 0px 0px 40px;
+    padding: 0;
+    text-decoration: none;
+}
+#ListeMenu a{
+    text-decoration: none;
+    color: #b47f2a;
+}
+#ListeMenu li{
+    text-decoration: none;
+    list-style: none;
+    padding: 5px 0px 10px 10px;
+    width: 100px;
+    height: 12px;
+    background-color: #5A3640;
+}
+#ListeMenu li:hover{
+    background-color: #7A3640;
+}
+
+#flechdroite {
+    width: 0; 
+    height: 0; 
+    border-top: 13px solid transparent;
+    border-bottom: 16px solid transparent;
+    border-left: 10px solid #5A3640;
+    left: 99px; top:-23.5px;
+    position: relative;
+}
+
+.upload {
+    top: 0;
+    width: 100%;
+    position: relative;
+    background-color: #25373D;
+    min-height: 792px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.FormUpload {
+    margin: 60px;
+    width: 700px;
+    height: 420px;
+    background-color: rgba(90,54,64,1);
+    color: #FFF;
+    position: fixed;
+    border-radius: 20px 20px 20px 20px;
+    z-index: 3; left: 50%;
+    margin-left: -350px; /* Half of the width */
+    box-shadow: -1px 2px 40px 3px rgba(0, 0, 0, 0.3) inset;
+}
+
+#IdUser {
+    height: 100%;
+    background-color: #2E505C;
+    padding-left: 30px;
+    padding-right: 30px;
+    float: right;
+}
+
+.player {
+    width:100%;
+    height:60px;
+    background-color: transparent;
+}
+
+.FondPlayer {
+    background-color: transparent;
+    width: 100%; height: 100%;
+    float: left;
+    position: relative;
+}
+.FondPlayer ul li{
+    display: inline-block;
+}
+
+#Upload {
+    height: 100%;
+    width: 100%;
+}
+
+#EffetFondNoir {
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+    width: 100%; text-align: center;
+    min-height: 840px; height: auto;
+    margin: 107px auto 10px auto;
+    top: 0;
+}
+.Photo{
+    border-radius:250px;
+    float:left;
+    width:250px;
+    height:250px;
+    margin-left:80px;
+    margin-top:40px;
+    background-size: cover;
+}
+
+.MesLike{
+    width:100px;
+    height:200px;
+    background-color:white;
+    
+
+
+.RecupMdp {
+    height: 100%;
+    width: 100%;
+}
+
+.ConnexionInscription {
+    float: left;
+    width: 100%;
+    position: relative;
+    background-color: #25373D;
+    min-height: 790px;
+    height: auto;
+    z-index: 1;
+}
