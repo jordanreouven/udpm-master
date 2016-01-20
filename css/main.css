@@ -863,16 +863,26 @@ label{
     background-size: cover;
 }
 
-.MesLike{
-    width:100px;
-    height:200px;
-    background-color:white;
-    
-
+.Nom{
+    width:500px;
+    height:50px;
+    margin-left:400px;
+    margin-top:120px;
+    color:#b47f2a;
+    text-align:auto;
+    font-size:30px; 
+}
 
 .RecupMdp {
     height: 100%;
     width: 100%;
+}
+.like{
+    width:500px;
+    height:250px;
+     background-color:#2E505C;
+    margin-top:250px;
+    margin-left:80px;
 }
 
 .ConnexionInscription {
@@ -883,4 +893,11 @@ label{
     min-height: 790px;
     height: auto;
     z-index: 1;
+}
+.bio{
+    width:500px;
+    height:200px;
+    margin-left:800px;
+    margin-top:-30px;
+    
 }

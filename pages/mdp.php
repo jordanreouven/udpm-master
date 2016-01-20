@@ -11,7 +11,7 @@ if($email!=""){
 }
 $retour=@$_GET['retour'];
 if($retour==1){
-    header("Location:index.php?page=Music");   
+    header("Location:index.php");   
 }
 ?>
 <div class="mdp" hidden>

@@ -3,6 +3,7 @@
 $Login=htmlspecialchars(@$_POST['Login']);
 $Password=htmlspecialchars(@$_POST['Password']);
 
+
 function bdConnect($requete, $type_req){
     $hote='localhost';
     $nom_bd='udpm'; //Le nom de votre base de données.
@@ -16,7 +17,7 @@ function bdConnect($requete, $type_req){
         die();
     }
 
-    //Execution de la requ^te
+    //Execution de la requête
     if ($type_req == "select"){
         $result=$connexion->query("$requete");
         return ($result);
@@ -40,6 +41,7 @@ while ($ligne = $resultats->fetch()){
             session_start();
             $_SESSION['Login']=$Login;
             $_SESSION['Password']=$Password;
+            $_SESSION['logged']="yes";
             break;
         }
         else{

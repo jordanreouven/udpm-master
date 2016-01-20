@@ -1,5 +1,6 @@
 <?php 
 session_start();
+if($_SESSION['logged']=="yes"){
 $NomUtilisateur=$_SESSION['Login'];
 ?>
 <div class="page">
@@ -11,3 +12,4 @@ $NomUtilisateur=$_SESSION['Login'];
                 <?php include("Include/Player.php"); ?>
             </div>
 </div> 
+<?php } else {header('location:index.php?Page=ConnexionInscription');}

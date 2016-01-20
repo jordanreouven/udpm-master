@@ -1,7 +1,8 @@
 <?php
-
-include("Include/ConnexionBaseDeDonnees.php");
 session_start();
+if($_SESSION['logged']=="yes"){
+include("Include/ConnexionBaseDeDonnees.php");
+
 $NomUtilisateur=$_SESSION['Login'];
 
 ?>
@@ -26,7 +27,7 @@ $NomUtilisateur=$_SESSION['Login'];
             <div id="TopMusique">
                 <p>Top Musique</p>
                 <?php
-                $requete="SELECT * FROM `music` ORDER BY `Like` DESC LIMIT 5 ";
+                $requete="SELECT * FROM ´music´ ORDER BY ´Like´  DESC LIMIT 5 ";
                 $resultat=bdConnect($requete, 'select');
                 while ($ligne=$resultat->fetch()){
                             echo"<div style=' width:200px; height:150px; float:left;'align=center>";
@@ -55,3 +56,4 @@ $NomUtilisateur=$_SESSION['Login'];
         </div>
     </div>
 </div>
+<?php } else { header('location:index.php?Page=ConnexionInscription');}
